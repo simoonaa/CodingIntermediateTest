@@ -10,10 +10,45 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+
+    /* Quadrat */
+    border-radius: 0;
 }
 
 div {
     background: white;
     width: 10vw;
     height: 10vw;
+
+    /* initial position */
+    transform: translateX(0);
+
+    /* animation properties */
+    animation-name: move;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+
+        /* Anfang */
+        border-radius: 0;
+    }
+
+    50% {
+        transform: translateX(70vw);
+
+        /* Ende */
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: translateX(0);
+
+        /* Retourne */
+        border-radius: 0;
+    }
 }
