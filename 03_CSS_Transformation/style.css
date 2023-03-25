@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    place-items: center;
+    background: #0077b6;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div {
+    background: #fb6f92;
+    width: 20rem;
+    height: 20rem;
+}
